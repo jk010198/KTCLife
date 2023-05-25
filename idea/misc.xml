@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_achievers_photo.xml" value="0.12360688956433637" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_add_achievers.xml" value="0.2509057971014493" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_admin_update_payments.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_bonus.xml" value="0.1956521739130435" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_direct_ref_display_team.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_display_team.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_electicity_bill_pay.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_home.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_home_profile.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_id_payment.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_int_payout_report.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_log_report.xml" value="0.2509057971014493" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_main.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_monthly_target.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_new_joining_report.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_no_login_home_page.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_our_profile.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_pay_in_reports.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_pay_installment_self.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_pay_out_reports.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_payment_history_list.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_payment_history_report.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_payment_modes.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_payout_report.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_pending_payements_report.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_pending_users_kyc_details.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_pending_users_kyc_list.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_plans.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_profile_image.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_reports.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_show_achievers.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_show_income_plan.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_show_monthly_target.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_show_new_idone_time_bonus.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_show_plan.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_sign_up.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_splash_screen.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_total_register_users_list_report.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_tree_monthly_bonus.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_update_user_data.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/activity_wallet_payment.xml" value="0.24682971014492755" />
+        <entry key="..\:/KtcLife/app/src/main/res/layout/grid_item_layout.xml" value="0.13020833333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
