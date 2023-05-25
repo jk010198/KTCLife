@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowPlanActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/select_plans"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Select Cash back Plan">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompletetv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/nunitosans_regular"
+            android:inputType="none"
+            android:text="-- Choose Plan --" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_desc_showPlan8593"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_plans"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/nunitosans_regular"
+        android:gravity="center"
+        android:text="\t\tBelow table shows Month number and Deposited Amount. \n\t\t Red month shows Cash back amount at that month."
+        android:textColor="#CD7005"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_desc_showPlan8593">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ScrollView
+                    android:id="@+id/scrollview8302"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:scrollbars="horizontal"
+                    tools:ignore="MissingConstraints">
+
+                    <TableLayout
+                        android:id="@+id/tablePlan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <!-- 1 2 3 start -->
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:background="#F3F0A2"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_plan_head1"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="M\n1"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_head2"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="M\n2"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_head3"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="M\n3"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="#A9F3D3"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_plan_show1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_show2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_show3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+                        <!-- 1 2 3 end -->
+                        <!-- 4 5 6 start -->
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="#F3F0A2"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_plan_head4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="M\n4"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_head5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="M\n5"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_head6"
+                                android:layout_width="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="M\n6"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="#A9F3D3"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_plan_show4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_show5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_show6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+                        <!-- 4 5 6 end -->
+                        <!-- 7 8 9 start -->
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="#F3F0A2"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_plan_head7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="Cash back\n@7"
+                                android:textColor="#FF0000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_head8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="M\n8"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_head9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="M\n9"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="#A9F3D3"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_plan_show7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_show8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_show9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+                        <!-- 7 8 9 end -->
+                        <!-- 10 11 12 start -->
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="#F3F0A2"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_plan_head10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="M\n10"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_head11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="M\n11"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_head12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="M\n12"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="#A9F3D3"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_plan_show10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_show11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_show12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+                        <!-- 10 11 12 end -->
+                        <!-- 13 14 15 start -->
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="#F3F0A2"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_plan_head13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="Cash back\n@13"
+                                android:textColor="#FF0000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_head14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="M\n14"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_head15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="M\n15"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="#A9F3D3"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_plan_show13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_show14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_show15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+                        <!-- 13 14 15 end -->
+                        <!-- 16 17 18 start -->
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:background="#F3F0A2"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_plan_head16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="M\n16"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_head17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="M\n17"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_head18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="M\n18"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="#A9F3D3"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_plan_show16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_show17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_show18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+                        <!-- 16 17 18 end -->
+                        <!-- 19 20 21 start -->
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:background="#F3F0A2"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_plan_head19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="Cash back\n@19"
+                                android:textColor="#FF0000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_head20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="M\n20"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_head21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="M\n21"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="#A9F3D3"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_plan_show19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_show20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_show21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+                        <!-- 19 20 21 end -->
+                        <!-- 22 23 24 start -->
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:background="#F3F0A2"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_plan_head22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="M\n22"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_head23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="M\n23"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_head24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="M\n24"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_head25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="Cash back\n@25"
+                                android:textColor="#FF0000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="#A9F3D3"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_plan_show22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_show23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_show24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_show25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+                    </TableLayout>
+                </ScrollView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/ll3929"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/constraintll"
+                android:background="#D1B6B6"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="7dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunitosans_regular"
+                    android:text="Language: "
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroup4920"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbMarathi67"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_margin="1dp"
+                        android:layout_weight="0.33"
+                        android:fontFamily="@font/nunitosans_regular"
+                        android:text="Marathi" />
+
+                    <RadioButton
+                        android:id="@+id/rbHindi67"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_weight="0.33"
+                        android:fontFamily="@font/nunitosans_regular"
+                        android:text="Hindi" />
+
+                    <RadioButton
+                        android:id="@+id/rbEnglish67"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_weight="0.33"
+                        android:fontFamily="@font/nunitosans_regular"
+                        android:text="English" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/scrollView3729"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll3929">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvInfoPlan302"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll3929"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:fontFamily="@font/nunitosans_regular"
+                        android:shadowColor="#B39292"
+                        android:text="Info Text"
+                        android:textColor="#037693"
+                        android:textColorHighlight="#C86E6E" />
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

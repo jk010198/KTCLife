@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView_totalbonus_ofUsers6575"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/nunitosans_regular"
+        android:text="Total Bonus"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <ListView
+        android:id="@+id/listview_wallet_history_ofUsers_forAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView_totalbonus_ofUsers6575"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/tv_no_history_ofUsers_forAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/nunitosans_regular"
+        android:gravity="center"
+        android:text="No history"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+</RelativeLayout>

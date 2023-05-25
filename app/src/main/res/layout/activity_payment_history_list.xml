@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4EBF5"
+    android:orientation="vertical"
+    tools:context=".PaymentHistoryList">
+
+    <TextView
+        android:id="@+id/tv_payment_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunitosans_regular"
+        android:gravity="center"
+        android:text="Payment History"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_paymenthistory"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tv_payment_history"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_no_payment_history"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:fontFamily="@font/nunitosans_regular"
+        android:gravity="center"
+        android:text="No History Found"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentModesActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="64dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_paymode_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/nunitosans_regular"
+                android:text="Payment Methods Available."
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_paymode_info45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_paymode_title"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/nunitosans_regular"
+                android:text="Pay on mobile number 8286357171. Use upi: 8286357171@upi to make payment."
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imagebtn_PhonePay"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/tv_paymode_info45"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/phonepe" />
+
+            <TextView
+                android:id="@+id/tv_paymode_phonepay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_paymode_info45"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/imagebtn_PhonePay"
+                android:fontFamily="@font/nunitosans_regular"
+                android:text="PhonePay"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/imagebtn_googlePay"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/imagebtn_PhonePay"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/googlepay" />
+
+            <TextView
+                android:id="@+id/tv_paymode_googlepay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagebtn_PhonePay"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_toRightOf="@id/imagebtn_googlePay"
+                android:fontFamily="@font/nunitosans_regular"
+                android:text="GooglePay"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/imagebtn_PayTm"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/imagebtn_googlePay"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/paytm" />
+
+            <TextView
+                android:id="@+id/tv_paymode_paytm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagebtn_googlePay"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_toRightOf="@id/imagebtn_PayTm"
+                android:fontFamily="@font/nunitosans_regular"
+                android:text="Pay TM"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/imagebtn_AllUpi"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/imagebtn_PayTm"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/upi" />
+
+            <TextView
+                android:id="@+id/tv_paymode_allupi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagebtn_PayTm"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_toRightOf="@id/imagebtn_PayTm"
+                android:fontFamily="@font/nunitosans_regular"
+                android:text="All UPI"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/imagebtn_Cash"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/imagebtn_AllUpi"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/admin_payment" />
+
+            <TextView
+                android:id="@+id/tv_paymode_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagebtn_AllUpi"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_toRightOf="@id/imagebtn_Cash"
+                android:fontFamily="@font/nunitosans_regular"
+                android:text="CASH"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagebtn_Cash"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:text="      Make payment using any above option and WhatsApp your payment id and name to +91 8286357171. \n
+        उपर दिए गए कोंई भी एक विकल्प से भुगतान करने के बाद Payment ID अपने नाम के साथ +91 8286357171 इस नंबर पे Whatsapp से भेजे|"
+                android:textColor="#f00"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

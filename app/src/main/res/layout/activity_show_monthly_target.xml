@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4EBF5"
+    tools:context=".ShowMonthlyTargetActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv87878"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/nunitosans_regular"
+                android:gravity="center_horizontal"
+                android:text="Direct Monthly New ID Target Bonus Plan"
+                android:textColor="#000"
+                android:textSize="22dp" />
+
+            <TableLayout
+                android:id="@+id/tableTargetBonusPlan3282"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv87878"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F3F0A2"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/nunitosans_regular"
+                        android:gravity="center"
+                        android:text="ID"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/nunitosans_regular"
+                        android:gravity="center"
+                        android:text="Cashback"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#D1CCCC"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/nunitosans_regular"
+                        android:gravity="center"
+                        android:text="10000"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/nunitosans_regular"
+                        android:gravity="center"
+                        android:text="500"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#CCBCBC"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/nunitosans_regular"
+                        android:gravity="center"
+                        android:text="20000"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/nunitosans_regular"
+                        android:gravity="center"
+                        android:text="1000"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#D1CCCC"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/nunitosans_regular"
+                        android:gravity="center"
+                        android:text="50000"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/nunitosans_regular"
+                        android:gravity="center"
+                        android:text="3000"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tableTargetBonusPlan3282"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:gravity="center_horizontal"
+                android:text="      ID        Cashback   \n\n 5      1000   \n\n
+  10      2000   \n\n 15      3200   \n\n"
+                android:textColor="#000"
+                android:textSize="23dp"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/progress63483"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv87878"
+                android:layout_marginTop="120dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/image0283923"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:scaleType="fitCenter"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/image0283924"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitCenter"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textViewIncomeBonus5659043"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#784E4E"
+                android:text="\n पहले लेवल का आपको 6 % बोनस मिलेगा|\n
+> जब आपके निचे 4 Silver बन जायेंगे, तब से आपको 2nd levelका  3%  बोनस मिलेगा|\n
+> जब आपके निचे 4 Gold बन जायेंगे, तब से आपको 3rd level का 3% बोनस मिलेगा|\n
+> जब आपके निचे 4 Ruby बन जायेंगे, तब से आपको 4th level का 3% बोनस मिलेगा|\n
+> जब आपके निचे 4 Diamond बन जायेंगे, तब से आपको 5th level का 1% बोनस मिलेगा|\n
+> जब आप Diamond बनोगे तब आपको 8 level तक बोनस मिलेगा.\n
+
+अगर आप 60 दिनों तक renewal नहीं करते है तो downline का बोनस नहीं मिलेगा|\n
+बोनस लेने के लिए आपको हमेशा renewal भरते रहना पड़ेगा|
+\n
+---------------------------\n
+> When you refer a person in your team then you will get 6% bonus.\n
+> When you will have 4 Silver in team then you will get 2nd level 3% bonus.\n
+> When you will have 4 Gold in team then you will get 3rd level 3% bonus.\n
+> When you will have 4 Ruby in team then you will get 4th level 3% bonus.\n
+> When you will have 4 Diamonds in team then you will get 5th level 1% bonus.\n
+> When you will become Diamond then you will get 8th level 1% bonus.\n
+
+
+If you dont pay renewal for 60 days you will not get bonus.\n
+To get bonus continuously you need to keep renewal.\n\n\n"
+                android:textColor="#F6DE09"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout><!--    android:src="@drawable/monthlytarget_dec2020"-->

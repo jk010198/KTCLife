@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp">
+
+    <TextView
+        android:id="@+id/tvHead0382"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/nunitosans_regular"
+        android:gravity="center"
+        android:text="Reset Account/Plan Payments"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_paymentsInfoOnDialog53829"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHead0382"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/nunitosans_regular"
+        android:text="Plan Payments"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+    <!--    <Button-->
+    <!--        android:id="@+id/buttonResetAccountPayment6463"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="36dp"-->
+    <!--        android:background="@drawable/bg_button"-->
+    <!--        android:layout_marginTop="15dp"-->
+    <!--        android:layout_marginStart="30dp"-->
+    <!--        android:layout_marginEnd="30dp"-->
+    <!--        android:layout_marginBottom="30dp"-->
+    <!--        android:text="Reset"-->
+    <!--        android:layout_below="@+id/tv_paymentsInfoOnDialog53829"-->
+    <!--        />-->
+</RelativeLayout>

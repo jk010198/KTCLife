@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/admin_menu_add_Payments"
+    android:orderInCategory="100"
+    android:visible="true"
+    android:title="Add Payments"
+    app:showAsAction="never"
+    />
+<!--    <item-->
+<!--        android:id="@+id/admin_menu_CashPayments"-->
+<!--        android:orderInCategory="110"-->
+<!--        android:visible="true"-->
+<!--        android:title="Cash Payment Deduction"-->
+<!--        app:showAsAction="never"-->
+<!--        />-->
+</menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/grp_1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_home"
+            android:checked="true"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/menu_display_team"
+            android:icon="@drawable/ic_team"
+            android:title="Display my team" />
+
+        <item
+            android:id="@+id/menu_plan"
+            android:icon="@drawable/ic_plan"
+            android:title="Show plan" />
+
+        <item
+            android:id="@+id/menu_signup"
+            android:icon="@drawable/ic_signup"
+            android:title="New sign up" />
+        <item
+            android:id="@+id/menu_help"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="help" />
+        <item
+            android:id="@+id/menu_shareApp"
+            android:icon="@android:drawable/ic_menu_share"
+            android:title="Share app" />
+
+        <item
+            android:id="@+id/menu_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+
+</menu>
